@@ -1,0 +1,442 @@
+{
+	"info": {
+		"_postman_id": "4dd7ffdc-6222-4ace-829f-8c6496f510df",
+		"name": "Trello2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21025398"
+	},
+	"item": [
+		{
+			"name": "Tworzenie nowej tablicy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/?name=Listopad&key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Listopad"
+						},
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy tablic",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/members/me/boards?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"members",
+						"me",
+						"boards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowej listy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/62ddc53574dbe1290ba886d5/lists?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7&name=tydzień 4",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"62ddc53574dbe1290ba886d5",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						},
+						{
+							"key": "name",
+							"value": "tydzień 4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy dostępnych list",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/62ddc53574dbe1290ba886d5/lists?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"62ddc53574dbe1290ba886d5",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tworzenie nowej karty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards?idList=62ddc661a0023c3ac73a774f&key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7&name=poniedziałek",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "idList",
+							"value": "62ddc661a0023c3ac73a774f"
+						},
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						},
+						{
+							"key": "name",
+							"value": "poniedziałek"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pokazywanie listy stworzonych kart",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/62ddc53574dbe1290ba886d5/cards?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"62ddc53574dbe1290ba886d5",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Aktualizacja karty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/62ddc817cbe1c4072f641542?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7&name=czwartek&desc=poprawka",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"62ddc817cbe1c4072f641542"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						},
+						{
+							"key": "name",
+							"value": "czwartek"
+						},
+						{
+							"key": "desc",
+							"value": "poprawka"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuwanie karty",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/cards/62ddcc1409fdef8693e24f0a?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"cards",
+						"62ddcc1409fdef8693e24f0a"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuwanie tablicy",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api.trello.com/1/boards/62ddcbfc905c875137f137b0?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+					"protocol": "https",
+					"host": [
+						"api",
+						"trello",
+						"com"
+					],
+					"path": [
+						"1",
+						"boards",
+						"62ddcbfc905c875137f137b0"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "0be40e4ee6fd60420a9df80a68654b03"
+						},
+						{
+							"key": "token",
+							"value": "1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

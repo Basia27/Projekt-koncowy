@@ -1,0 +1,99 @@
+{
+  "id": "464fb956-f815-4444-865b-07f10d570f98",
+  "version": "2.0",
+  "name": "New Tours",
+  "url": "https://demo.guru99.com/test/newtours/",
+  "tests": [{
+    "id": "341ed38a-b18f-4f13-9490-f360b49d19c6",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "acb74d49-5872-4ed8-b781-3bb579564736",
+    "name": "Poprawne logowanie",
+    "commands": [{
+      "id": "25f603d0-ea16-48a9-9c17-27842f1185c7",
+      "comment": "",
+      "command": "open",
+      "target": "https://demo.guru99.com/test/newtours/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2726daed-b3c5-4b53-9362-c107c6c47d9e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x744",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8f4d8919-80ef-4e80-bb9b-710c5e2d905e",
+      "comment": "",
+      "command": "click",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbef8429-31a6-4222-91a6-828cd2178b8c",
+      "comment": "",
+      "command": "type",
+      "target": "name=userName",
+      "targets": [
+        ["name=userName", "name"],
+        ["css=tr:nth-child(2) > td > input", "css:finder"],
+        ["xpath=//input[@name='userName']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "basia"
+    }, {
+      "id": "4f09e2d2-54f9-40a2-a514-26b1e0787e39",
+      "comment": "",
+      "command": "click",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3d46ea2d-4628-4a54-b8a2-6342c140c4f2",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=tr:nth-child(3) input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "basia"
+    }, {
+      "id": "49ee5d91-6a11-445a-81c9-aaba45385705",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "39ed3c98-3d05-4eed-91ad-b4ae57319413",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["341ed38a-b18f-4f13-9490-f360b49d19c6"]
+  }],
+  "urls": ["https://demo.guru99.com/test/newtours/"],
+  "plugins": []
+}

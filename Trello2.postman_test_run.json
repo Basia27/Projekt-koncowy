@@ -1,0 +1,297 @@
+{
+	"id": "54c954d2-02c0-4635-90d5-7488840c85e2",
+	"name": "Trello2",
+	"timestamp": "2022-07-24T22:49:02.704Z",
+	"collection_id": "21025398-4dd7ffdc-6222-4ace-829f-8c6496f510df",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 9,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "e7dd6124-ad15-494b-a78d-03c570bbf879",
+			"name": "Tworzenie nowej tablicy",
+			"url": "https://api.trello.com/1/boards/?name=Listopad&key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+			"time": 303,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				303
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "ed50d34d-0e37-4738-899f-378adc086bb2",
+			"name": "Pokazywanie listy tablic",
+			"url": "https://api.trello.com/1/members/me/boards?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+			"time": 188,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				188
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "dec08454-0694-4ee1-9da7-c4079ef073a3",
+			"name": "Tworzenie nowej listy",
+			"url": "https://api.trello.com/1/boards/62ddc53574dbe1290ba886d5/lists?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7&name=tydzie%C5%84%204",
+			"time": 277,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				277
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "94383b47-7767-4d30-b2c5-1357552302d0",
+			"name": "Pokazywanie listy dostępnych list",
+			"url": "https://api.trello.com/1/boards/62ddc53574dbe1290ba886d5/lists?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+			"time": 162,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "7076c51f-7d9c-4fa4-ac1f-0f3bdafe3036",
+			"name": "Tworzenie nowej karty",
+			"url": "https://api.trello.com/1/cards?idList=62ddc661a0023c3ac73a774f&key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7&name=poniedzia%C5%82ek",
+			"time": 271,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				271
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "f736c659-a8e5-478d-a77d-c8e0e0335e5f",
+			"name": "Pokazywanie listy stworzonych kart",
+			"url": "https://api.trello.com/1/boards/62ddc53574dbe1290ba886d5/cards?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+			"time": 170,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				170
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "bd7af45e-9e03-4561-9935-95b12be0a520",
+			"name": "Aktualizacja karty",
+			"url": "https://api.trello.com/1/cards/62ddc817cbe1c4072f641542?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7&name=czwartek&desc=poprawka",
+			"time": 193,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				193
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "bf7fc751-968d-4ce4-82e7-7b12a8fd173c",
+			"name": "Usuwanie karty",
+			"url": "https://api.trello.com/1/cards/62ddcc1409fdef8693e24f0a?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+			"time": 262,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				262
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "cc05c387-fbb7-42f7-b9ef-6293261698ee",
+			"name": "Usuwanie tablicy",
+			"url": "https://api.trello.com/1/boards/62ddcbfc905c875137f137b0?key=0be40e4ee6fd60420a9df80a68654b03&token=1aa0206f314ce974bc2ce1eff796670ce38eace2037c7b29e3fbb896a639eae7",
+			"time": 436,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				436
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2262,
+	"collection": {
+		"requests": [
+			{
+				"id": "e7dd6124-ad15-494b-a78d-03c570bbf879",
+				"method": "POST"
+			},
+			{
+				"id": "ed50d34d-0e37-4738-899f-378adc086bb2",
+				"method": "GET"
+			},
+			{
+				"id": "dec08454-0694-4ee1-9da7-c4079ef073a3",
+				"method": "POST"
+			},
+			{
+				"id": "94383b47-7767-4d30-b2c5-1357552302d0",
+				"method": "GET"
+			},
+			{
+				"id": "7076c51f-7d9c-4fa4-ac1f-0f3bdafe3036",
+				"method": "POST"
+			},
+			{
+				"id": "f736c659-a8e5-478d-a77d-c8e0e0335e5f",
+				"method": "GET"
+			},
+			{
+				"id": "bd7af45e-9e03-4561-9935-95b12be0a520",
+				"method": "PUT"
+			},
+			{
+				"id": "bf7fc751-968d-4ce4-82e7-7b12a8fd173c",
+				"method": "DELETE"
+			},
+			{
+				"id": "cc05c387-fbb7-42f7-b9ef-6293261698ee",
+				"method": "DELETE"
+			}
+		]
+	}
+}
